@@ -5,6 +5,7 @@
 npm install
 ```
 ### in case any error occurs during installation, run the following command:
+```
 
 npm cache clean --force
 ```
