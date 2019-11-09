@@ -12,8 +12,10 @@ npm cache clean --force
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
+
+#### or you can change the (dev) command from package.json file
 
 ### Compiles and minifies for production
 ```
