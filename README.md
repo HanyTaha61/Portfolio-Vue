@@ -5,7 +5,9 @@
 npm install
 ```
 ### in case any error occurs during installation, run the following command:
-<code>npm cache clean --force</code>
+
+npm cache clean --force
+```
 
 ### Compiles and hot-reloads for development
 ```
