@@ -2,7 +2,7 @@
     <div id="skills">
         <div class="layer">
             <div class="container">
-                <img class="img-fluid" src="../assets/cv.jpg" alt="cv">
+                <!-- <img class="img-fluid" src="../assets/cv.jpg" alt="cv"> -->
             </div>
         </div>
     </div>

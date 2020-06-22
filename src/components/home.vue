@@ -2,56 +2,33 @@
 <div class="home">
   <div class="layer">
     <div class="container">
-      <div class="title">
-          <h1 class=" text-light">Hi, I'm</h1>   
-          <h2 class="">Hany Taha</h2>
-          <p class=" text-light">
-            Front-End Engineer
-            <span class="d-block px-2">
-              &lt; Vue developer /&gt;
-            </span>
-          </p>
-        </div>
-        <div class="typer">
-              <p class="fixedText text-light rounded">I can help in: </p>
-              <vue-typer class="vueType"
-                :text='[
-                  "Optimizing web pages for maximum speed and scalability",
-                  "Determining the structure and design of web pages",
-                  "Striking a balance between functional and aesthetic design",
-                  "Maintaining working websites",
-                  "Working in a team using latest technology",
-                ]'
-                :repeat='Infinity'
-                :pre-type-delay='100'
-                :type-delay='20'
-                :pre-erase-delay='3000'
-                :erase-delay='10'
-                erase-style='backspace'
-                caret-animation='smooth'
-              />
-        </div>
+      <div class="title text-right">
+        <h1 class=" text-light">مرحبا بكم في</h1>   
+        <h3 class="">خمسة لصحتك</h3>
+        <p class=" text-light">صفحة مهتمة بالصحة والجمال و الغذاء</p>
       </div>
-  </div>  
+    </div>
+    <carousel-home class="carousel_home"/>
+  </div>
 </div>
 </template>
 
 <script>
-import { VueTyper } from 'vue-typer'
+import carouselHome from './carousel'
 
 export default {
-  components:{
-    VueTyper
-  }
+  components:{ carouselHome }
 }
 </script>
 
 <style lang='scss' scoped>
 .home{
-  background: url('../assets/home.jpg') no-repeat center center;
+  background: url('../assets/bg-home.jpg') no-repeat center center;
   background-size: cover;
   position: absolute;
   width: 100%;
+  height: fit-content;
+  direction: rtl;
 
   .layer{
     padding-top: 100px;
@@ -59,51 +36,40 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0,0,0, 0.1);
-  }
-    .typer{
-      font-size: 2em;
-      padding-bottom: 400px;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.75);
 
-      @media(max-width: 705px){
-        margin-left: 15px;
-      }
-      
-      .fixedText{
-        background-color: var(--secondary-color);
-        width: fit-content;
-        padding: 5px 10px;
-      }
+    .carousel_home{
+      margin-top: 150px;
+      padding-bottom: 120px;
 
-      .vueType{
-      background-color: rgba(#fff,0.8);
-      padding: 5px 10px;
-      font-family: 'Quicksand';
-
-      @media (max-width: 705px) {
-        font-size: 1.5rem !important;
-      }
-
+      @media (max-width) {
+          
       }
     }
+  }
 
   .title {
     padding-top: 150px;
 
-      @media (max-width: 705px) {
+      @media (max-width: 767px) {
       }    
 
     h1{
+      font-family: 'Reem Kufi';
       font-size: 7rem !important;
-      @media (max-width: 705px) {
+      @media (max-width: 767px) {
         font-size: 3rem !important;
       }
     }
 
-    h2{
-      width: fit-content;
+    h3{
+      // width: fit-content;
       padding: 5px;
       border-radius: 5px;
+      font-size: 4rem !important;
+      font-family: 'Reem Kufi';
+
 
       @media (max-width: 992px) {
           font-size: 3rem !important;
@@ -111,9 +77,10 @@ export default {
     }
 
     p{
-      font-family: 'Quicksand';
       font-size: 3rem;
       color: #ccc;
+      font-family: 'Reem Kufi';
+
 
       @media (max-width: 705px) {
         font-size: 2rem !important;
@@ -126,10 +93,10 @@ export default {
       }
     }
 
-    h1, h2{
+    h1, h3{
       color: var(--secondary-color);
-      font-size: 7rem;
-      font-family: 'Abril Fatface';
+      // font-size: 7rem;
+      // font-family: 'Abril Fatface';
     }
 
     h1, p{

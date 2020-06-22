@@ -21,7 +21,10 @@
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Quicksand|Abril+Fatface");
+
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
 @import 'https://use.fontawesome.com/releases/v5.11.2/css/all.css';
 
 
